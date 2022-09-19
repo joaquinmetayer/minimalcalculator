@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal calculator by Joaquin Metayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dflex-jc-ac-fc calculator01bg">
+        <h1>Minimal calculator</h1>
+        <div class="calculator-container dflex-jc-ac-fc">
+            <form name = "calculator">
+                 <input type="textfield" name="ans" value=" " autocomplete="off" readonly>
+                 <br>
+                 <div class="grid-btns01">
+                    <input type="button" value="7" onclick ="document.calculator.ans.value+='7'" class="bggray">
+                    <input type="button" value="8" onclick ="document.calculator.ans.value+='8'" class="bggray">
+                    <input type="button" value="9" onclick ="document.calculator.ans.value+='9'" class="bggray">
+                    <input type="button" value="+" onclick ="document.calculator.ans.value+='+'" class="bgorange">
+                    <input type="button" value="4" onclick="document.calculator.ans.value+='4'" class="bggray">
+                    <input type="button" value="5" onclick="document.calculator.ans.value+='5'" class="bggray">
+                    <input type="button" value="6" onclick="document.calculator.ans.value+='6'" class="bggray">
+                    <input type="button" value="-" onclick="document.calculator.ans.value+='-'" class="bgorange">
+                    <input type="button" value="1" onclick="document.calculator.ans.value+='1'" class="bggray">
+                    <input type="button" value="2" onclick="document.calculator.ans.value+='2'" class="bggray">
+                    <input type="button" value="3" onclick="document.calculator.ans.value+='3'" class="bggray">
+                    <input type="button" value="X" onclick="document.calculator.ans.value+='*'" class="bgorange">
+                    <input type="button" value="0" onclick="document.calculator.ans.value+='0'" class="bggray">
+                    <input type="reset" value= "C" class="bgwhite">
+                    <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="bgwhite">
+                    <input type="button" value="/" onclick = "document.calculator.ans.value+='/'" class="bgorange">
+                 </div>
+            </form>
+        </div>
+        <p>See the <a href="https://github.com/joaquinmetayer/minimalcalculator" target="_blank">code</a> by <a href="https://joaquinmetayer.com/" target="_blank">Joaquin Metayer</a></p>
+    </div>
+</body>
+</html>
