@@ -23,6 +23,9 @@ p{
     font: 15px;
     padding: 20px;
 }
+input:focus{
+    outline: none;
+}
 .dflex-jc-ac-fc{
     display: flex;
     justify-content: center;
