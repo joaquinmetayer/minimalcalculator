@@ -15,11 +15,28 @@
             <form name = "calculator">
                  <input type="textfield" name="ans" value=" " autocomplete="off" readonly>
                  <br>
+                 <!--
+                    -----------
+                    EXPLICACION
+                    -----------
+                    https://github.com/joaquinmetayer/minimalcalculator
+                    -----------
+                    al colocar un form con el nombre calculadora "guardo los inputs" que se seleccionen en una variable
+                    variable llamada "calculator" (desconozco si es variable en si, pero almaceno datos)
+                    la forma en que almaceno esos datos den esa variable es
+                        asignando envento que al precionar el input se guarte el valor en valor del input con el nombre ans
+                        que es donde muestro el resultado final cuando le dpy igual
+                        por eso el "onclick="document.calculator.ans.value+='7'""
+                            que al clickar que en el documento, el elemento / formulario en este caso con el nombre calculator..
+                            busque el input con el nombre ans y asigne y sume en valor del boton que fue activado
+                    que es donde voy agregando a la variable los strings de inputs con los valores ya sea numero o operador
+                    para despues al darle al boton = ejecute funcion eval que me ejecuta declaraciones y por ende me da el resultado
+                -->
                  <div class="grid-btns01">
-                    <input type="button" value="7" onclick ="document.calculator.ans.value+='7'" class="bggray">
-                    <input type="button" value="8" onclick ="document.calculator.ans.value+='8'" class="bggray">
-                    <input type="button" value="9" onclick ="document.calculator.ans.value+='9'" class="bggray">
-                    <input type="button" value="+" onclick ="document.calculator.ans.value+='+'" class="bgorange">
+                    <input type="button" value="7" onclick="document.calculator.ans.value+='7'" class="bggray">
+                    <input type="button" value="8" onclick="document.calculator.ans.value+='8'" class="bggray">
+                    <input type="button" value="9" onclick="document.calculator.ans.value+='9'" class="bggray">
+                    <input type="button" value="+" onclick="document.calculator.ans.value+='+'" class="bgorange">
                     <input type="button" value="4" onclick="document.calculator.ans.value+='4'" class="bggray">
                     <input type="button" value="5" onclick="document.calculator.ans.value+='5'" class="bggray">
                     <input type="button" value="6" onclick="document.calculator.ans.value+='6'" class="bggray">
